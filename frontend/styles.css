@@ -41,19 +41,39 @@ header .menu-content #opcao{
     display: flex;
     justify-content: flex-end;
     font-size: 14px;
-    font-family: 'inherit', sans-serif;
+    font-family: 'Circular', sans-serif;
     
     
 }
 
 header .menu-content #opcao a{
-    padding: 11px 16px;
+    padding: 11px 12px;
     color: #222222;
     text-decoration: none;
     font-weight: bolder;
     font-size: 14px;
-    background-color: #F7F7F7;
+    font-family: 'Circular', sans-serif;
+    background-color:white;
     border-radius: 20px;
     line-height: 18px;
+   
 }
 
+header .menu-content #opcao button{
+    box-sizing: border-box;
+    width: 120px;
+    background-color: white;
+    
+    font-weight: bolder;
+    font-size: 14px;
+    font-family: 'Circular', sans-serif;
+    border-radius: 30px;
+    border-width: 1px 1px 2px 2px;
+    border-style: solid;
+    border-color: rgb(241, 233, 233);
+    border-bottom-color: rgb(230, 230, 230);
+}
+
+header .menu-content #opcao a:hover{
+    background-color: #F7F7F7;
+}
