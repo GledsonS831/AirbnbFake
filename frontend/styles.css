@@ -77,3 +77,10 @@ header .menu-content #opcao button{
 header .menu-content #opcao a:hover{
     background-color: #F7F7F7;
 }
+
+header .menu-content #opcao button:hover{
+    box-shadow: 0 2px 5px #e9e9e9;
+
+    
+
+}
