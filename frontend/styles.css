@@ -18,6 +18,8 @@ header .top-header p{
     color: #222222;
     font-family: 'Circular', sans-serif;
     line-height: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 
