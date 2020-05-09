@@ -179,12 +179,47 @@ a:hover{
 
 .links a #subName{
     color: #686868;
-    
     padding-bottom: 15px;
     border-bottom-style:inset;
     border-bottom-width: 1px;
     border-bottom-color: #dbdbdb; 
 }
+
+.infoAbout{
+    display: flex;
+    padding-top: 40px;
+    
+}
+
+.tableColunm{
+    padding-left: 150px;
+    padding-right: 70px;
+}
+
+.tableColunm #linksAbout{
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.tableColunm #linksAbout a{
+    text-decoration: none;  
+}
+
+.tableColunm #titleAbout{
+    font-family: 'Circular', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.tableColunm #linksAbout a p{
+    padding-bottom: 20px;
+    font-family: 'Circular', sans-serif;
+    color: rgb(19, 15, 15);
+}
+
+
+
 
 
 
