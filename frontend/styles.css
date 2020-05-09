@@ -1,18 +1,9 @@
 body{
     margin: 0;
-    padding: 0;
-    display: flex;
-    
-}
-
-header {
-    width: 100%;
-    height: 100%;
-    
+    padding: 0;    
 }
 
 header .top-header{
-    
     background-color: #F7F7F7;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -36,7 +27,7 @@ header .menu-content{
     
 }
 
-header .menu-content #opcao{
+header .menu-content #option{
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -46,7 +37,7 @@ header .menu-content #opcao{
     
 }
 
-header .menu-content #opcao a{
+header .menu-content #option a{
     padding: 11px 12px;
     color: #222222;
     text-decoration: none;
@@ -59,7 +50,7 @@ header .menu-content #opcao a{
    
 }
 
-header .menu-content #opcao button{
+header .menu-content #option button{
     box-sizing: border-box;
     width: 120px;
     background-color: white;
@@ -74,13 +65,33 @@ header .menu-content #opcao button{
     border-bottom-color: rgb(230, 230, 230);
 }
 
-header .menu-content #opcao a:hover{
+header .menu-content #option a:hover{
     background-color: #F7F7F7;
 }
 
-header .menu-content #opcao button:hover{
+header .menu-content #option button:hover{
     box-shadow: 0 2px 5px #e9e9e9;
-
-    
-
 }
+
+header .phrase{
+    padding-left: 150px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+header .phrase span{
+    font-family: 'Circular', sans-serif;
+    background: linear-gradient(to right, rgb(146, 23, 77) 9.38%, rgb(228, 29, 92) 88.54%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-size: 50px;
+}
+
+section{
+    margin: 0;
+    padding: 0;
+    padding-left: 150px;
+}
+
+
