@@ -226,16 +226,47 @@ a:hover{
     font-size: 14px;
     font-family: 'Circular', sans-serif;
     color: rgb(51, 48, 48);
+}
 
+footer{
+    display: flex;
+}
+
+.bottomFoo {
+    display: flex;
+    padding-left: 150px;
+    
+    width: 500px;
     
 }
 
+.bottomFoo #textAbout{
+    
+    
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Circular', sans-serif;
+    font-size: 15px;
+    color: rgb(51, 48, 48);
+}
 
+.bottomFoo #point{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 15px;
+    color: #747474;
+}
 
+.iconsFoo{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 30px;
+    padding-right: 85px;
+}
 
-
-
-
-
-
-padding-bottom: 60px;
+.iconsFoo a{
+    
+    width: 50px;
+}
