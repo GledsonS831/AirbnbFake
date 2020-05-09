@@ -187,13 +187,19 @@ a:hover{
 
 .infoAbout{
     display: flex;
-    padding-top: 40px;
+    padding-top: 60px;
+    
+    padding-left: 150px;
+
     
 }
 
 .tableColunm{
-    padding-left: 150px;
-    padding-right: 70px;
+    width: 410px;
+    height: 280;
+    border-bottom-width: 1px;
+    border-bottom-style: inset;
+    border-bottom-color: #dbdbdb;
 }
 
 .tableColunm #linksAbout{
@@ -212,10 +218,16 @@ a:hover{
     font-size: 14px;
 }
 
+
+
+
 .tableColunm #linksAbout a p{
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
     font-family: 'Circular', sans-serif;
-    color: rgb(19, 15, 15);
+    color: rgb(51, 48, 48);
+
+    
 }
 
 
@@ -226,3 +238,4 @@ a:hover{
 
 
 
+padding-bottom: 60px;
