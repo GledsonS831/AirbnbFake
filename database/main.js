@@ -1,4 +1,4 @@
-var index = 0;
+
 const state = {
     photos : [],
     props : [],
@@ -34,18 +34,6 @@ function clearState(state){
     }
 }
 
-function showPhotos(index, list){
-    limit = 6;
-    if(index){
-        var limit = (index+1) * 6;
-    }
-    
-    for(i = limit-6; i < limit; i++){
-        console.log(list[i].photo)
-        console.log(i)
-    }
-}
-
 async function getData(index){
     const data = await fetch('https://api.sheety.co/30b6e400-9023-4a15-8e6c-16aa4e3b1e72');
     data.json().then(
@@ -54,9 +42,44 @@ async function getData(index){
             
             setState(state, places, index);
             //showPhotos(index, places);
-            
+            addGallery(state);
         }
     )
 }
 
-export default state;
+
+function createTag(){
+    
+
+    var div = document.createElement("div")
+    div.id = "cards";
+    var cards = div;
+
+    return cards;
+}
+
+function addGallery(state){
+    const cont = document.getElementById("container");
+
+    for(i = 0; i < 6; i++){
+        var card = createTag()
+        cont.append(card);
+        addPhoto(state, i, card); 
+    }
+    
+  //  addProps();
+  //  addName();
+  //  addPrice();
+}
+
+
+function addPhoto(state, i, card){
+    
+
+    var img = document.createElement("img")
+    img.src = state.photos[i];
+    
+    card.append(img);
+}
+
+

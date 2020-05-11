@@ -273,11 +273,19 @@ footer{
     width: 50px;
 }
 
-.galery{
+.gallery{
     margin-left: 150px;
     margin-right: 180px;
     display: flex;
     justify-content: center;
-    border: 1px solid;
-    
+    border: 1px solid; 
+}
+
+#container {
+    display: flex;
+}
+
+#cards img{
+    width: 100px;
+    height: 100px;
 }
