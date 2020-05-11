@@ -272,3 +272,12 @@ footer{
     
     width: 50px;
 }
+
+.galery{
+    margin-left: 150px;
+    margin-right: 180px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    
+}
