@@ -2,7 +2,6 @@
 
 *Acesse a webpage clicando <a href="https://airbnb-rooms.netlify.app/">aqui.<a/>*
 
----
 # Descrição
 
 <p>Um desafio proposto pelo grupo <a href="https://xpcorp.gama.academy/"> Games Academy</a> de desenvolver uma página web semelhante a do <a href="https://www.airbnb.com.br/"> airbnb </a>. Deixando claro que essa página é somente uma referência como modelo para aprendizado.</p>
@@ -10,15 +9,11 @@
 
 # Tecnologias
 
----
-
 * JAVASCRIPT
 * HTML
 * CSS
 
 # Banco de dados
-
----
 
 Para mostrar na tela as imagens foi feito uma requisição de um banco de dados em json, com uma funçao nativa do javascript chamada fecth.
 
