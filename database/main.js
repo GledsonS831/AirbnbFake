@@ -8,23 +8,28 @@ const state = {
 }
 
 function setState(state, list, page){
-    clearState(state)
+   clearState(state)
+   
+   
     limit = 6;
     if(page){
         var limit = (page+1) * 6;
     }
     index_aux = 0;
     for(i = limit-6; i < limit; i++){
-        state.photos.push(list[index_aux].photo);
-        state.props.push(list[index_aux].property_type);
-        state.names.push(list[index_aux].name);
-        state.prices.push(list[index_aux++].price);
+        
+        state.photos.push(list[i].photo);
+        state.props.push(list[i].property_type);
+        state.names.push(list[i].name);
+        state.prices.push(list[i].price);
         state.page = page;
     }
-    console.log(state)
+    
+    
 }
 
 function clearState(state){
+    
     for(i = 0; i < 6; i++){
         state.photos = []
         state.props = []
@@ -32,6 +37,10 @@ function clearState(state){
         state.prices = []
         state.page = 0;
     }
+}
+
+function clearWindow(){
+
 }
 
 async function getData(index){
@@ -42,29 +51,19 @@ async function getData(index){
             
             setState(state, places, index);
             //showPhotos(index, places);
-            addGallery(state);
+            addGallery(state, index);
         }
     )
 }
 
 
-function createTag(){
+function addGallery(state, page){
     
 
-    var div = document.createElement("div")
-    div.id = "cards";
-    var cards = div;
-
-    return cards;
-}
-
-function addGallery(state){
-    const cont = document.getElementById("container");
-
     for(i = 0; i < 6; i++){
-        var card = createTag()
-        cont.append(card);
-        addPhoto(state, i, card); 
+        
+        addPhoto(state, i); 
+        
     }
     
   //  addProps();
@@ -74,12 +73,8 @@ function addGallery(state){
 
 
 function addPhoto(state, i, card){
+    document.getElementById(`i${i+1}`).src = state.photos[i];
     
-
-    var img = document.createElement("img")
-    img.src = state.photos[i];
-    
-    card.append(img);
 }
 
 
