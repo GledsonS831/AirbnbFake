@@ -1,12 +1,13 @@
 function createImage(i){
     var img = document.createElement("img");
     img.id = `i${i}`;
+    img.className = "item"
     return img;
 }
 function createName(i){
     var name = document.createElement("div");
     name.id = `name${i}`;
-
+    name.className = "item"
     name.append(addP("name",i))
 
     return name;
@@ -14,14 +15,14 @@ function createName(i){
 function createPrice(i){
     var price = document.createElement("div");
     price.id = `price${i}`;
-
+    price.className = "item"
     price.append(addP("price", i))
     return price;
 }
 function createProp(i){
     var prop = document.createElement("div");
     prop.id = `prop${i}`;
-
+    prop.className = "item"
     prop.append(addP("prop", i))
 
     return prop;
@@ -30,6 +31,7 @@ function createProp(i){
 function addP(name, i){
     var p = document.createElement("p");
     p.id = `${name}Info${i}`  
+    p.className = "textP"
     return p
 }
 

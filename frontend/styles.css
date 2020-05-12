@@ -276,16 +276,39 @@ footer{
 .gallery{
     margin-left: 150px;
     margin-right: 180px;
+    justify-content: center;
+    border: 10px solid; 
+    
+    border: 10px solid orange; 
+}
+
+.butPag{
+    border: 10px solid blue; 
     display: flex;
     justify-content: center;
-    border: 1px solid; 
+}
+
+.butPag button{
+    border: 10px solid black; 
 }
 
 #container {
     display: flex;
+    
+    border: 10px solid yellow; 
 }
 
+.cards {
+    border: 10px solid green; 
+}
 
+.item {
+    border: 10px solid red; 
+}
+
+.textP{
+    border: 10px solid purple; 
+}
 
 .cards  img{
     width: 100px;
