@@ -277,40 +277,50 @@ footer{
     margin-left: 150px;
     margin-right: 180px;
     justify-content: center;
-    border: 10px solid; 
-    
-    border: 10px solid orange; 
+ 
 }
 
 .butPag{
-    border: 10px solid blue; 
     display: flex;
     justify-content: center;
 }
 
-.butPag button{
-    border: 10px solid black; 
-}
+
 
 #container {
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     
-    border: 10px solid yellow; 
 }
 
 .cards {
-    border: 10px solid green; 
+    
+
+    border-radius: 20px;
+
+    padding-bottom: 15px;
+    box-shadow: 1px 4px  6px rgba(216, 216, 216, 0.77);
+    margin-right: 130px;
+    margin-bottom: 20px;
 }
 
 .item {
-    border: 10px solid red; 
+    
 }
 
 .textP{
-    border: 10px solid purple; 
+    
+    padding-left: 15px;
+    padding-top: 15px;
+    font-family: "Circular", sans-serif;  
+    color: rgb(83, 80, 80);
 }
 
 .cards  img{
-    width: 100px;
-    height: 100px;
+    width: 400px;
+    height: 280px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
 }
