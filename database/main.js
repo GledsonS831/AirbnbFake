@@ -39,10 +39,6 @@ function clearState(state){
     }
 }
 
-function clearWindow(){
-
-}
-
 async function getData(index){
     const data = await fetch('https://api.sheety.co/30b6e400-9023-4a15-8e6c-16aa4e3b1e72');
     data.json().then(
@@ -51,30 +47,47 @@ async function getData(index){
             
             setState(state, places, index);
             //showPhotos(index, places);
-            addGallery(state, index);
+            addGallery(state);
         }
     )
 }
 
 
-function addGallery(state, page){
+function addGallery(state){
     
 
     for(i = 0; i < 6; i++){
         
         addPhoto(state, i); 
-        
+        addName(state, i);
+        addPrice(state, i);
+        addProp(state, i);
     }
     
-  //  addProps();
-  //  addName();
-  //  addPrice();
+  
 }
 
-
-function addPhoto(state, i, card){
+function addPhoto(state, i){
     document.getElementById(`i${i+1}`).src = state.photos[i];
     
+}
+
+function addName(state, i){
+    var doc = document.getElementById(`nameInfo${i+1}`);
+    doc.innerHTML = "";
+    doc.append(`Nome: ${state.names[i]}`) 
+}
+
+function addPrice(state, i){
+    var doc = document.getElementById(`priceInfo${i+1}`);
+    doc.innerHTML = "";
+    doc.append(`Preço de hospedagem: $${state.prices[i]}`) 
+}
+
+function addProp(state, i){
+    var doc = document.getElementById(`propInfo${i+1}`);
+    doc.innerHTML = "";
+    doc.append(`Tipo de propriedade: ${state.props[i]}`) 
 }
 
 
